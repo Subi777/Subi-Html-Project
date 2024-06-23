@@ -10,7 +10,9 @@
 <body>
     <nav>
         <div class = "nav-left">
+            <a href="new project.html">
             <img src="images/logo.png" class="logo">
+        </a>
             <ul>
                 <li><img src="images/notification.png"></li>
                 <li><img src="images/inbox.png"></li>
@@ -22,8 +24,47 @@
                 <img src="images/search.png">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsmenutoggle()">
                 <img src="images/profile-pic.png">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Nicholsen</p>
+                        <a href="profile.html">See profile Details</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new designx</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icons">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png"width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icons">
+                    <a href="#">Help & Support <img src="images/arrow.png"width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icons">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png"width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icons">
+                    <a href="#">Logout<img src="images/arrow.png"width="10px"></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -75,10 +116,164 @@
                     <img src="images/profile-pic.png">
                     <div>
                         <p>Nicholsen</p>
-                        <small>Public</small>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Anthing else???"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling-Activity</a>
+                    </div>  
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Nicholsen</p>
+                            <span>May 17 2023 13:45 pm</span>
+    
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                </div>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> Youtube channel to watch more videos on
+                Website Development.<a href="#">#Easy Tutorials</a> 
+                <a href="#">#You Tube</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">50</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>  
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Nicholsen</p>
+                            <span>May 28 2023 9:45 am</span>
+    
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                </div>
+                <p class="post-text">Line and share with your friends,tag <span>@Easy Tutorials</span> 
+                facebook page on your post,ask your doubts on the comments.<a href="#">#Easy Tutorials</a> 
+                <a href="#">#You Tube</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">110</div>
+                        <div><img src="images/comments.png">60</div>
+                        <div><img src="images/share.png">25</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-caret-down"></i>
                     </div>
                 </div>
             </div>
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Nicholsen</p>
+                            <span>August 12 2023 18:45 pm</span>
+    
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                </div>
+                <p class="post-text">share and like my page it is more helpfull<span>@Easy Tutorials</span> Youtube channel to watch more videos on
+                Website Development.<a href="#">#Easy Tutorials</a> 
+                <a href="#">#You Tube</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">90</div>
+                        <div><img src="images/comments.png">30</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Nicholsen</p>
+                            <span>december 25 2023 9:40 am</span>
+    
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                </div>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> page to help you
+                <a href="#">#Easy Tutorials</a> 
+                <a href="#">#You Tube</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">80</div>
+                        <div><img src="images/comments.png">30</div>
+                        <div><img src="images/share.png">16</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Nicholsen</p>
+                            <span>January 2 2024 16:20 pm</span>
+    
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                </div>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> Youtube channel to watch more videos on
+                .Like ,share,comment.ask any doubts un comments<a href="#">#Easy Tutorials</a> 
+                <a href="#">#You Tube</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">220</div>
+                        <div><img src="images/comments.png">150</div>
+                        <div><img src="images/share.png">200</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button-type">Load More</button>
         </div>
         <div class="right-sidebar">
             <div class="sidebar-title">
@@ -136,5 +331,9 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <p>Copyright 2024-Easy Tutorials Youtube Channel</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
